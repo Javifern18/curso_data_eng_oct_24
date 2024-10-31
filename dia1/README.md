@@ -28,14 +28,6 @@ create or replace schema bronze;
 Creamos las siguientes tablas dentro de la bbdd y esquema anteriores: 
 
 ```
--- Create Addresses --
-CREATE TABLE ADDRESSES(
-	ADDRESS_ID VARCHAR(256),
-	ZIPCODE VARCHAR(256),
-	COUNTRY VARCHAR(256),
-	ADDRESS VARCHAR(256),
-	STATE VARCHAR(256)
-);
 
 -- Create Events --
 CREATE TABLE EVENTS(
@@ -110,9 +102,11 @@ Debes crearlas en el esquema **bronze** de tu base de datos. Recuerda que la doc
 
 ### 2 - Carga de datos (Internal Stage)
 
-Ahora cargar los datos de en las tablas de orders, events, addresses, order_items y users. Para ello, tu equipo ya te ha dejado los ficheros CSV en un internal stage llamado @bronze_stage (base de datos **CURSO_DATA_ENGINEERING_2024** y esquema **Bronze**).
+Ahora cargar los datos de en las tablas de orders, events, order_items y users. Para ello, tu equipo ya te ha dejado los ficheros CSV en un internal stage llamado @bronze_stage (base de datos **CURSO_DATA_ENGINEERING_2024** y esquema **Bronze**).
 
 **Importante**: Recuerda de nuevo, la documentación de Snowflake es TU AMIGA.
+
+¡Falta una tabla para cargar el fichero addresses.csv! Tendrás que ingeniártelas para conocer los campos de la tabla y hacer tú mismo el CREATE TABLE... (Puedes descagar los ficheros a tu local, consultar directamente el dato en el stage, etc...)
 
 ### 3 - Carga de datos (local - snowsql)
 
