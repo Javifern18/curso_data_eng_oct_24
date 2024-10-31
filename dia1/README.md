@@ -118,7 +118,8 @@ Ahora cargar los datos de en las tablas de orders, events, addresses, order_item
 
 Cuando crees que ya está todo, te das cuenta que todavía faltan por cargar las tablas de products y la tabla de promos... Avisas a tu equipo, y te pasan los ficheros directamente para que los subas tú mismo, esta vez no serán ellos los que previamente los subirán al stage. 
 
-[CSVs]
+https://github.com/Javifern18/curso_data_eng_oct_24/blob/main/dia1/products.csv
+https://github.com/Javifern18/curso_data_eng_oct_24/blob/main/dia1/promos.csv
 
 Tendrás que ingeniártelas para cargar crear un stage en el esquema bronze de tu base de datos, cargar los ficheros y posteriormente volcar sus datos en las tablas correspondientes.
 
